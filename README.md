@@ -1,2 +1,2 @@
 # planetz
-Stuff, such, nonsense, whatever...
+I will be working on sphere walking for the planetz game.
