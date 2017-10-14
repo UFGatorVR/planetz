@@ -54,7 +54,10 @@
      <Compile Include="Assets\scripts\FirstPerson.cs" />
      <Compile Include="Assets\scripts\GravityAttractor.cs" />
      <Compile Include="Assets\scripts\GravityBody.cs" />
+     <Compile Include="Assets\scripts\MoveCube.cs" />
      <Compile Include="Assets\scripts\MovePlayer.cs" />
+     <Compile Include="Assets\scripts\PlanetSize.cs" />
+     <None Include="Assets\Surfaces Lite\Demo Scene\Data\Read Me!.txt" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
