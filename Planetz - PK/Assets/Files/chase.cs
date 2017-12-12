@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class chase : MonoBehaviour {
 
@@ -16,6 +17,12 @@ public class chase : MonoBehaviour {
 		Vector3 o = planet.transform.position; //origin, center of planet
 		Vector3 p = player.transform.position;
 		Vector3 e = transform.position;
+
+		float dist = Vector3.Distance (p, e);
+
+		if (dist < 6f) {
+			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+		}
 
 		//The vector from the sphere to the player and enemy
 		Vector3 u = p - o;

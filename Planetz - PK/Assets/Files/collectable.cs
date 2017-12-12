@@ -18,11 +18,13 @@ public class collectable : MonoBehaviour {
 	{
 		if (c.gameObject.name == "Player") 
 		{
-			gameState gS = GameObject.Find ("State").GetComponent<gameState> ();
+			c.gameObject.GetComponent<FirstPerson> ().water += 0.1f;
+			GameState gS = GameObject.Find ("GameState").GetComponent<GameState> ();
 			audioSource.PlayOneShot (clip);
 			gS.dust += 1;
-			print (gS.dust);
-			Destroy(gameObject);
+//			print (gS.dust);
+//			Destroy(gameObject);
+			transform.position = -c.gameObject.transform.position;
 		}
 
 	}
